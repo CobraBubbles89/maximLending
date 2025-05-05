@@ -1,0 +1,107 @@
+@import './styles/header.css';
+@import './styles/about.css';
+@import './styles/mainPage.css';
+@import './styles/footer.css';
+@import './styles/price.css';
+@import './styles/feedback.css';
+@import './styles/form.css';
+@import './styles/button.css';
+
+@import './styles/media.css';
+
+
+:root {
+
+    --bgColor: #fff;
+
+    --greyColor: #f3f3f3;
+
+    --greyColorStrong: #dbdbdb;
+
+
+    --mainFontColor: #262626;
+    --accentFontColor: yellow;
+
+    --mainFont: 'Inter', sans-serif;
+    --accentFont: 'Catamaran', sans-serif;
+
+    --widthContainer: 1440px;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+*:focus {
+    outline-color: var(--greyColorStrong);
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    vertical-align: middle; 
+}
+
+p, a, h1, h2, h3, li, button {
+    font-family: var(--mainFont);
+    color: var(--mainFontColor);
+}
+
+.container {
+    max-width: var(--widthContainer);
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+.active {
+    display: flex;
+}
+
+.is-lock {
+    overflow: hidden;
+}
+
+.is-active-link {
+    border-radius: 6px;
+    background-color: var(--greyColor);
+}
+
+.is-active {
+    display: flex;
+}
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

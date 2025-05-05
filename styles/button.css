@@ -1,0 +1,45 @@
+
+.button-60 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #363636;
+    cursor: pointer;
+    /* display: inline-flex; */
+    font-family: var(--mainFont);
+    font-size: 1rem;
+    height: 2.5rem;
+    justify-content: center;
+    /* line-height: 1.5; */
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    /* transition-duration: .3s; */
+  }
+  
+  .button-60:active {
+    border-color: #4a4a4a;
+    outline: 0;
+  }
+  
+  .button-60:focus {
+    border-color: #485fc7;
+    outline: 0;
+  }
+  
+  .button-60:hover {
+    border-color: #b5b5b5;
+  }
+  
+  .button-60:focus:not(:active) {
+    box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+  }

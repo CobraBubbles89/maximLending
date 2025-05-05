@@ -1,0 +1,58 @@
+
+.main_page {
+    padding: 1rem 2rem;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+}
+
+.textMainBlock {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .3rem;
+}
+
+.mainPage_subtitle {
+    margin-inline: auto;
+    text-align: center;
+    letter-spacing: .2rem;
+    max-width: 80%;
+}
+
+.button_box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon::after {
+    content: '';
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-arrow-right::after {
+    background-image: url('../images/arrow-right.svg');
+}
+
+.icon-handshake::after {
+    background-image: url('../images/handshake.svg');
+}
+
+.icon-arrow-right::after:hover {
+    transform: rotate(30deg);
+    
+}
+
+    

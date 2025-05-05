@@ -1,0 +1,104 @@
+
+
+@media (max-width: 1199px) {
+    .header_nav-list {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header_body {
+        overflow-y: auto;
+    }
+    .header__burger-button {
+        display: inline-flex;
+        z-index: 1;
+    }
+
+    .header__burger-button.is-active .burger-button__line:first-child {
+                translate: -0.1rem 0.5rem;
+                rotate: 45deg;
+    }
+    .header__burger-button.is-active .burger-button__line:nth-child(2) {
+        translate: -0.1rem -0.1rem;
+        rotate: -45deg;
+    }
+    .header__burger-button.is-active .burger-button__line:last-child {
+        width: 0;
+    }
+
+    .header_nav-list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header_overlay {
+        position: fixed;
+        inset: 0; 
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(-100%);
+        background-color: white;
+        padding: 1rem;
+    }
+
+    .header_overlay.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        z-index: 1;
+    }
+
+    .header_logo {
+        order: 1;
+        margin: 0 auto;
+    }
+}
+
+@media (width < 480.98px) {
+    .header_logo {
+        margin: 0;
+    }
+    .header_overlay {
+        gap: 2rem;
+    }
+    .header_icons_wrapper {
+        justify-content: center;
+    }
+    .header_nav {
+        overflow-y: auto;
+    }
+    .header_nav-list {
+        align-items: center;
+    }
+
+    .textMainBlock {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    .main_page {
+        padding: .5rem .5rem;
+    }
+    .mainPage_subtitle {
+        text-align: center;
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .button_box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .button-60 {
+        font-size: .875rem;
+    }
+
+    .footer_text {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
