@@ -6,21 +6,17 @@
     align-items: center;
 }
 
-.main_page-text {
-    width: 80%;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    font-family: var(--mainFont);
-}
-
 .textMainBlock {
+    text-align: center;
     font-weight: 500;
     letter-spacing: .3rem;
 }
 
 .mainPage_subtitle {
+    margin-inline: auto;
+    text-align: center;
     letter-spacing: .2rem;
+    max-width: 80%;
 }
 
 .button_box {

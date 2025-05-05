@@ -58,14 +58,47 @@
     }
 }
 
-@media (width < 480px) {
-    body {
-        background-color: darkkhaki;
-    }
+@media (width < 480.98px) {
     .header_logo {
         margin: 0;
     }
+    .header_overlay {
+        gap: 2rem;
+    }
+    .header_icons_wrapper {
+        justify-content: center;
+    }
     .header_nav {
         overflow-y: auto;
+    }
+    .header_nav-list {
+        align-items: center;
+    }
+
+    .textMainBlock {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    .main_page {
+        padding: .5rem .5rem;
+    }
+    .mainPage_subtitle {
+        text-align: center;
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .button_box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .button-60 {
+        font-size: .875rem;
+    }
+
+    .footer_text {
+        font-size: 0.75rem;
+        text-align: center;
     }
 }

@@ -6,10 +6,12 @@
 }
 
 .price_wrapper_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
     border: 1px solid var(--greyColorStrong);
     border-radius: .375rem;
-    /* max-height: 100%; */
 }
 
 .price_wrapper_card:hover {
@@ -20,12 +22,15 @@
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-
 .price_title_block {
     display: flex;
     align-items: center;
     gap: 1rem;
     border-bottom: 1px dotted var(--greyColorStrong);
+}
+
+.price_card_list li:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .price_item {
