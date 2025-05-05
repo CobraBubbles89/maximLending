@@ -1,0 +1,53 @@
+
+
+.about_wrapper {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about_descr {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.about_picture {
+    position: sticky;
+    top: 0;
+    width: 45%;
+    min-height: 100vh;
+}
+
+.about_picture-image {
+    width: 100%;
+    object-fit: contain;
+    border: none;
+    border-radius: 6px;
+    animation: fadeIn 2s forwards;
+}
+
+.about_menu {
+    list-style-position: inside;
+}
+
+.about_item {
+    margin-bottom: 1rem;
+}
+
+.about_item:last-child {
+    margin-bottom: 0;
+}
+
+.about_text {
+    font-size: 18px;
+    line-height: 1.5;
+    animation: fadeIn 2s forwards;
+}
+
+.M20Link {
+    color: #d50027;
+    font-weight: 600;
+}
+
