@@ -14,11 +14,11 @@
 
 .popup_closer {
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -1.875rem;
+    right: -1.875rem;
     color: var(--mainFontColor);
     cursor: pointer;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1;
     user-select: none; 
 }
@@ -36,16 +36,18 @@
 }
 
 .popup_input {
-    width: 300px;
-    height: 30px;
+    width: 18.75rem;
+    max-height: 1.875rem;
     border-radius: .375rem;
     color: var(--mainFontColor);
     border: 1px solid var(--greyColor);
     padding: .6rem;
-    /* font-size: 18px; */
 }
 
 .popup_input:focus {
     outline-color: var(--greyColorStrong);
-    /* outline: 0; */
+}
+
+.specialInput {
+    display: none !important;
 }

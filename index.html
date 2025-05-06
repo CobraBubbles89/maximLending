@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alya || Main</title>
+    <title>AM || Main</title>
+    <link rel="icon" href="./favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,500,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /> -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body id="indexPage">
     <div class="popup_contacts_overlay">
-        <div>
-            <form class="popup_form">
+            <form
+            id="my-form" 
+            class="popup_form"
+            action="https://formspree.io/f/myzwwojp"
+            method="POST"
+            >
                 <span class="popup_closer">&times;</span>   
-                <label for="name">
-                    <input type="text" id="name" placeholder="введіть ім'я">
-                </label>
-                <label for="">
-                    <input type="email" placeholder="залиште email">
-                </label>
-                <label for="">
-                    <input type="tel" placeholder="залиште номер мобільного">
-                </label>
-                <label for="">
-                    <textarea name="" id="" placeholder="enter text.. "></textarea>
-                </label>
+                <label for="name"></label>
+                    <input 
+                        class="popup_input" 
+                        type="text" 
+                        id="name" 
+                        name="userName" 
+                        placeholder="введіть ім'я" 
+                        required
+                        minlength="2"
+                        maxlength="50"
+                        >
+                <label for="email"></label>
+                    <input 
+                        class="popup_input" 
+                        type="email" 
+                        id="email" 
+                        name="userEmail" 
+                        placeholder="вкажіть email" 
+                        required
+                        maxlength="50"
+                        >
+                <label for="tel"></label>
+                    <input 
+                        class="popup_input" 
+                        type="tel" 
+                        id="tel" 
+                        name="userTel" 
+                        placeholder="залиште номер мобільного"
+                        maxlength="16"
+                        >             
+                <label for="textarea"></label>
+                    <textarea 
+                        class="popup_input" 
+                        name="userMessage" 
+                        id="textarea" 
+                        placeholder="Запитайте мене..."
+                        maxlength="1000"
+                        ></textarea>
+                    <input class="specialInput" type="text" name="_gotcha"/>
+                    <input type="hidden" name="_language" value="en" />
                 <button type="submit" class="button-60">Відправити</button>
             </form>
-        </div>
     </div>
     <header class="header">
         <div class="header_body">
@@ -41,7 +71,7 @@
                 <ul class="header_nav-list">
                     <li class="header_nav-item">
                         <a data-section="about" href="about.html" class="header_nav-link">
-                            Про засновницю
+                            Про мене
                         </a>
                     </li>
                     <li class="header_nav-item">
@@ -79,7 +109,7 @@
     <main>
         <section data-section="main" class="main_page" id="main_page">
             <div class="main_page-text container">
-                <h1 class="textMainBlock">БУДУЙ БІЗНЕС, ЯКИЙ ВІДЧУВАЄТЬСЯ ЯК ТИ.</h1>
+                <h1 class="textMainBlock">БУДУЙ ПРОЄКТИ, ЯКІ ВІДЧУВАЮТЬСЯ ЯК ТИ.</h1>
                 <p class="mainPage_subtitle">Консультації для тих, хто хоче більше, ніж просто “працює”. Більше ясності. Більше себе. Без хаосу, без шаблонів, без фальші.</p>
                     <div class="button_box">
                         <a class="button-60" href="https://t.me/Alin_maxim" target="_blank">
