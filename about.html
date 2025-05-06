@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alya || About</title>
+    <title>AM || About</title>
+    <link rel="icon" href="./favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,500,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /> -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body id="aboutPage">
     <div class="popup_contacts_overlay">
-        <div>
-            <form class="popup_form">
-                <span class="popup_closer">&times;</span>   
-                <label for="name">
-                    <input class="popup_input" type="text" id="name" placeholder="введіть ім'я" required>
-                </label>
-                <label for="email">
-                    <input class="popup_input" type="email" id="email" placeholder="вкажіть email" required>
-                </label>
-                <label for="tel">
-                    <input class="popup_input" type="tel" id="tel" placeholder="залиште номер мобільного">
-                </label>
-                <label for="textarea">
-                    <textarea class="popup_input" name="" id="textarea" placeholder="Запитайте мене..."></textarea>
-                </label>
-                <button type="submit" class="button-60">Відправити</button>
-            </form>
-        </div>
+        <form
+        id="my-form" 
+        class="popup_form"
+        action="https://formspree.io/f/myzwwojp"
+        method="POST"
+        >
+            <span class="popup_closer">&times;</span>   
+            <label for="name"></label>
+                <input 
+                    class="popup_input" 
+                    type="text" 
+                    id="name" 
+                    name="userName" 
+                    placeholder="введіть ім'я" 
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    >
+            <label for="email"></label>
+                <input 
+                    class="popup_input" 
+                    type="email" 
+                    id="email" 
+                    name="userEmail" 
+                    placeholder="вкажіть email" 
+                    required
+                    maxlength="50"
+                    >
+            <label for="tel"></label>
+                <input 
+                    class="popup_input" 
+                    type="tel" 
+                    id="tel" 
+                    name="userTel" 
+                    placeholder="залиште номер мобільного"
+                    maxlength="16"
+                    >            
+            <label for="textarea"></label>
+                <textarea 
+                    class="popup_input" 
+                    name="userMessage" 
+                    id="textarea" 
+                    placeholder="Запитайте мене..."
+                    maxlength="1000"
+                    ></textarea>
+                <input class="specialInput" type="text" name="_gotcha"/>
+                <input type="hidden" name="_language" value="en" />
+            <button type="submit" class="button-60">Відправити</button>
+        </form>
     </div>
     <header class="header">
         <div class="header_body">
@@ -41,7 +71,7 @@
                 <ul class="header_nav-list">
                     <li class="header_nav-item">
                         <a data-section="about" href="about.html" class="header_nav-link is-active-link">
-                            Про засновницю
+                            Про мене
                         </a>
                     </li>
                     <li class="header_nav-item">
@@ -80,23 +110,24 @@
             <section data-section="about" class="about" id="about">
             <div class="about_wrapper container">
                 <div class="about_descr">
-                    <h1 class="textMainBlock">ХТО Я — І ЧОМУ МЕНІ МОЖНА ДОВІРЯТИ.</h1>
+                    <div>
+                    <h1 class="textMainBlock">ХТО Я — І ЧОМУ МЕНІ МОЖНА ДОВІРЯТИ</h1>
                     <p class="about_text">
                         Я — Аліна Максименко, співзасновниця [M]₂O cosmetics і жінка, яка вибрала свій шлях у бізнесі не тому, що було легко, а тому що було чесно. Я знаю, що таке створити бренд з нуля, збудувати команду, пройти через сумніви — і при цьому зберегти себе.
                         </p>
                         <p class="about_text">Протягом останніх років я створювала, розвивала і масштабувала власний бренд косметики <a class="M20Link" href="https://m2o.com.ua/" target="_blank">[M]₂O cosmetics.</a>
                             У цей час я ділилася досвідом зі знайомими, допомагала знайти відповіді на бізнес-запити, вирішувати завдання розвитку продукту, побудови команди, просування і продажів.
                             Тепер я готова запропонувати свій досвід ширшій аудиторії.</p>
-                            <div>
-                                <ul>
-                                    Якщо ви:
+                            
+                                <p class="decoration_text">ЯКЩО ВИ:</p>
+                                <ul class="about_service_list">
                                     <li>• запускаєте власний бренд;</li>
                                     <li>• працюєте над розвитком продукту;</li>
                                     <li>• потребуєте погляду з боку на свій бізнес-процес;</li>
                                     <li>• шукаєте шлях до впізнаваності бренду й збільшення продажів;</li>
                                     <li>• хочете уникнути типових помилок початківців</li>
-                                    — я можу допомогти вам пройти цей шлях усвідомлено й результативно.
                                 </ul>
+                                <p> — я допоможу вам пройти цей шлях усвідомлено й результативно.</p>
                                 <p class="about_text">
                     
                                     Я працюю чесно, практично і з урахуванням реальних можливостей бізнесу.
@@ -105,10 +136,15 @@
                                     Бажаєте спробувати
                                     Заповніть форму нижче або напишіть мені напряму — і ми обговоримо ваш запит.</p>
                             </div>
-                               <button type="button" class="button-60">Залишити заявку</button>
+                            <div class="button_box about_button_box">
+                                <a class="button-60 about_button_specific" href="https://t.me/Alin_maxim" target="_blank">Замовити консультацію</a>
+                                <a class="button-60 about_button_specific" href="price.html">
+                                    <span class="icon icon-arrow-right">Дізнатись більше</span>
+                                </a>
+                            </div>
                 </div>
                 <div class="about_picture">
-                    <img class="about_picture-image" src="./images/alyaPhoto.webp" alt="image">
+                    <img class="about_picture-image" src="./images/alyaPhotoCut.webp" alt="image">
                 </div>
             </div>
         </section>

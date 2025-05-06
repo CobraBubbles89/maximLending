@@ -1,8 +1,13 @@
+
+.price_section_wrapper {
+    padding-top: 2rem;
+}
+
 .price_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .price_wrapper_card {
@@ -27,6 +32,7 @@
     align-items: center;
     gap: 1rem;
     border-bottom: 1px dotted var(--greyColorStrong);
+    min-height: 3.75rem;
 }
 
 .price_card_list li:not(:last-child) {
@@ -61,24 +67,19 @@
 
 .price_service_list_wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-}
-
-.price_servise_list {
-    display: grid;
-    /* justify-content: flex-start; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* gap: 1rem 2rem; */
-    /* width: max-content; */
 }
 
 .price_servise_list > li {
     padding: .5rem;
-    align-content: center;
-    text-align: start;
-    color: var(--mainFontColor);
-    border-radius: .375rem;
+    text-align: center;
 }
+
+.price_card_title {
+    font-weight: 500;
+    margin-top: 0;
+}
+
 
 

@@ -18,14 +18,13 @@
 
     --greyColorStrong: #dbdbdb;
 
-
     --mainFontColor: #262626;
     --accentFontColor: yellow;
 
     --mainFont: 'Inter', sans-serif;
     --accentFont: 'Catamaran', sans-serif;
 
-    --widthContainer: 1440px;
+    --widthContainer: 90rem;
 }
 
 html {
@@ -42,6 +41,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-size: 1rem;
 }
 
 main {
@@ -88,7 +88,7 @@ p, a, h1, h2, h3, li, button {
 }
 
 .is-active-link {
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: var(--greyColor);
 }
 

@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alya || Price</title>
+    <title>AM || Price</title>
+    <link rel="icon" href="./favicons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,500,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /> -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body id="price">
     <div class="popup_contacts_overlay">
-        <div>
-            <form class="popup_form">
-                <span class="popup_closer">&times;</span>   
-                <label for="name">
-                    <input type="text" id="name" placeholder="введіть ім'я">
-                </label>
-                <label for="">
-                    <input type="email" placeholder="залиште email">
-                </label>
-                <label for="">
-                    <input type="tel" placeholder="залиште номер мобільного">
-                </label>
-                <label for="">
-                    <textarea name="" id="" placeholder="enter text.. "></textarea>
-                </label>
-                <button type="submit" class="button-60">Відправити</button>
-            </form>
-        </div>
+        <form
+        id="my-form" 
+        class="popup_form"
+        action="https://formspree.io/f/myzwwojp"
+        method="POST"
+        >
+        <span class="popup_closer">&times;</span>   
+            <label for="name"></label>
+                <input 
+                    class="popup_input" 
+                    type="text" 
+                    id="name" 
+                    name="userName" 
+                    placeholder="введіть ім'я" 
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    >
+            <label for="email"></label>
+                <input 
+                    class="popup_input" 
+                    type="email" 
+                    id="email" 
+                    name="userEmail" 
+                    placeholder="вкажіть email" 
+                    required
+                    maxlength="50"
+                    >
+            <label for="tel"></label>
+                <input 
+                    class="popup_input" 
+                    type="tel" 
+                    id="tel" 
+                    name="userTel" 
+                    placeholder="залиште номер мобільного"
+                    maxlength="16"
+                    >           
+            <label for="textarea"></label>
+                <textarea 
+                    class="popup_input" 
+                    name="userMessage" 
+                    id="textarea" 
+                    placeholder="Запитайте мене..."
+                    maxlength="1000"
+                    ></textarea>
+                <input class="specialInput" type="text" name="_gotcha"/>
+                <input type="hidden" name="_language" value="en" />
+            <button type="submit" class="button-60">Відправити</button>
+        </form>
     </div>
     <header class="header">
         <div class="header_body">
@@ -41,14 +71,9 @@
                 <ul class="header_nav-list">
                     <li class="header_nav-item">
                         <a data-section="about" href="about.html" class="header_nav-link">
-                            Про засновницю
+                            Про мене
                         </a>
                     </li>
-                    <!-- <li class="header_nav-item">
-                        <a data-section="services" href="service.html" class="header_nav-link">
-                            Про послуги агенції
-                        </a>
-                    </li> -->
                     <li class="header_nav-item">
                         <a data-section="price" href="#" class="header_nav-link is-active-link">
                             Формати співпраці
@@ -82,7 +107,7 @@
         </div>
     </header>
     <section data-section="price" class="price container" id="price">
-        <div>
+        <div class="price_section_wrapper">
             <div>
                 <h1 class="textMainBlock">ТЕМИ, З ЯКИМИ Я ПРАЦЮЮ:</h1>
                 <div class="price_service_list_wrapper">
@@ -96,13 +121,12 @@
                 </ul>
                 </div>
             </div>
-        
         <div class="price_wrapper">
             <div class="price_wrapper_card">
                 <div class="price_inner_card">
                 <div class="price_title_block">
-                    <img src="./images/consult.svg" alt="icon" width="24" height="24">
-                    <h3>Індивідуальні консультації (Разова зустріч або пакетна робота)</h3>
+                    <!-- <img src="./images/consult.svg" alt="icon" width="24" height="24"> -->
+                    <h3 class="price_card_title">Індивідуальні консультації (Разова зустріч або пакетна робота)</h3>
                 </div>
 
                 <ul class="price_card_list">
@@ -118,13 +142,13 @@
                         </div>
                 </div>
                 </div>
-                <button class="button-60 card_item_button" type="button">Замовити консультацію</button>
+                <a class="button-60 card_item_button" href="https://t.me/Alin_maxim" target="_blank">Замовити консультацію</a>
             </div>
             <div class="price_wrapper_card">
                 <div class="price_inner_card">
                 <div class="price_title_block">
-                    <img src="./images/consult.svg" alt="icon" width="24" height="24">
-                    <h3>Стратегічна сесія для запуску або перезапуску бренду</h3>
+                    <!-- <img src="./images/consult.svg" alt="icon" width="24" height="24"> -->
+                    <h3 class="price_card_title">Стратегічна сесія для запуску або перезапуску бренду</h3>
                 </div>
 
                 <ul class="price_card_list">
@@ -139,13 +163,15 @@
                         </div>
                 </div>
                 </div>
-                <button class="button-60 card_item_button" type="button">Замовити консультацію</button>
+                <a class="button-60 card_item_button" href="https://t.me/Alin_maxim" target="_blank">Замовити консультацію</a>
             </div>
             <div class="price_wrapper_card">
                 <div class="price_inner_card">
                 <div class="price_title_block">
-                    <img src="./images/consult.svg" alt="icon" width="24" height="24">
-                    <h3>Наставництво на перших етапах розвитку</h3>
+                    <!-- <img src="./images/consult.svg" alt="icon" width="24" height="24"> -->
+                    <h3 class="price_card_title">Наставництво на перших етапах розвитку 
+                        <!-- <span class="mockSpan">default</span> -->
+                    </h3>
                 </div>
 
                 <ul class="price_card_list">
@@ -160,7 +186,7 @@
                         </div>
                 </div>
                 </div>
-                <button class="button-60 card_item_button" type="button">Замовити консультацію</button>
+                <a class="button-60 card_item_button" href="https://t.me/Alin_maxim" target="_blank">Замовити консультацію</a>
             </div>
         </div>
     </div>

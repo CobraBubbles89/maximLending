@@ -10,18 +10,19 @@
     color: #363636;
     cursor: pointer;
     /* display: inline-flex; */
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1rem;
-    height: 2.5rem;
+    /* height: 2.5rem; */
     justify-content: center;
     /* line-height: 1.5; */
     padding: calc(.5em - 1px) 1em;
+    /* padding: .4rem; */
     position: relative;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    vertical-align: top;
+    vertical-align: middle;
     white-space: nowrap;
     /* transition-duration: .3s; */
   }

@@ -1,12 +1,12 @@
 
 .main_page {
     padding: 1rem 2rem;
-    /* display: none; */
     justify-content: center;
     align-items: center;
 }
 
 .textMainBlock {
+    margin: 0;
     text-align: center;
     font-weight: 500;
     letter-spacing: .3rem;
@@ -15,6 +15,7 @@
 .mainPage_subtitle {
     margin-inline: auto;
     text-align: center;
+    font-size: 1.125rem;
     letter-spacing: .2rem;
     max-width: 80%;
 }
@@ -38,8 +39,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .icon-arrow-right::after {
