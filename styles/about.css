@@ -25,7 +25,6 @@
     object-fit: contain;
     border: none;
     border-radius: 0.375rem;
-    animation: fadeIn 2s forwards;
 }
 
 .about_menu {
@@ -42,7 +41,6 @@
 
 .about_text {
     line-height: 1.5;
-    animation: fadeIn 2s forwards;
 }
 
 .about_service_list > li {
