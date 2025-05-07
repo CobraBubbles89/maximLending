@@ -67,6 +67,9 @@
 .footer_text {
     text-align: right;
 }
+.mainLink {
+    line-height: 1
+}
 
 .mainLink:hover {
     transition-duration: .3s;

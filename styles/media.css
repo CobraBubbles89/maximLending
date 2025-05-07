@@ -107,6 +107,14 @@
         display: none;
     } 
 
+    .button_box {
+        align-self: stretch;
+    }
+
+    .button-60 {
+        width: 100%;
+    }
+
     .price_wrapper {
         grid-template-columns: 1fr;
     }
