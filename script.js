@@ -60,10 +60,39 @@ function popupInteractive() {
 
 popupInteractive()
 
-let a = 'Dfkthmzy Ghtlhfcnbujdbx Rf,sotycrj-dsxktytycrbqGhtlhfcnbujdbxGhtlhfcnbuGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxjdbxGhtlhfcnbujdbxGhtlhfcnbujdbxDfkthmzy Ghtlhfcnbujdbx Rf,sotycrj-dsxktytycrbqGhtlhfcnbujdbxGhtlhfcnbuGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxjdbxGhtlhfcnbujdbxGhtlhfcnbujdbxDfkthmzy Ghtlhfcnbujdbx Rf,sotycrj-dsxktytycrbqGhtlhfcnbujdbxGhtlhfcnbuGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxjdbxGhtlhfcnbujdbxGhtlhfcnbujdbxDfkthmzy Ghtlhfcnbujdbx Rf,sotycrj-dsxktytycrbqGhtlhfcnbujdbxGhtlhfcnbuGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxjdbxGhtlhfcnbujdbxGhtlhfcnbujdbxDfkthmzy Ghtlhfcnbujdbx Rf,sotycrj-dsxktytycrbqGhtlhfcnbujdbxGhtlhfcnbuGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxGhtlhfcnbujdbxjdbxGhtlhfcnbujdbxGhtlhfcnbujdbx'
+function getTabs() {
+
+    const tabs = document.querySelector('.tabs_block')
+
+    tabs.addEventListener('click', (e) => {
+        const clickedElement = e.target.closest('.tab-button')
+        console.log(clickedElement);
+        
+        if(!clickedElement) return
+
+        const tabId = clickedElement.dataset.tab
+
+        tabs.querySelectorAll('.tab-button').forEach(item => item.classList.remove('is-active-head'))
+        tabs.querySelectorAll('.tab_content').forEach(item => item.classList.remove('is-active-tab'))
+
+        clickedElement.classList.add('is-active-head')
+        tabs.querySelector(`.tab_content[data-tab="${tabId}"]`).classList.add('is-active-tab')
+    })
+    
+}
+
+function startFeedbackPage() {
+    const currentURL = window.navigation.currentEntry.url
+    if(currentURL.includes('feedback')) {
+        getTabs()
+    }
+    return
+}
+
+startFeedbackPage()
 
 
-console.log(a.length);
+
 
 
 

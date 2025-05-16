@@ -6,17 +6,14 @@
 }
 
 @media (max-width: 1440.98px) {
-    .header_nav-list {
-        gap: 1rem;
-    }
     .footer_text {
         font-size: 0.875rem;
     }
 }
 
 @media (max-width: 1023.98px) {
-    .header_body {
-        overflow-y: auto;
+    .header_nav-list {
+        gap: 2rem;
     }
     .header__burger-button {
         display: inline-flex;
@@ -113,13 +110,18 @@
 
     .button-60 {
         width: 100%;
+        height: 2rem;
+    }
+
+    .header_contacts {
+        width: auto;
     }
 
     .price_wrapper {
         grid-template-columns: 1fr;
     }
-    .feedback_block {
-        width: 100%;
+    .tab_content {
+        grid-template-columns: 1fr;
     }
     .footer_text {
         font-size: 0.75rem;
