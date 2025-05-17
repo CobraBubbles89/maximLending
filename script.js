@@ -28,7 +28,7 @@ class Header {
     }
 
     bindEvents() {
-        this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
+        this.burgerButtonElement.addEventListener('pointerdown', this.onBurgerButtonClick)
     }
 
 }
@@ -45,11 +45,11 @@ function popupInteractive() {
         document.body.style.overflow = show ? 'hidden' : ''
     }
 
-    popupBtn.addEventListener('click', () => { togglepopup(true) })
+    popupBtn.addEventListener('pointerdown', () => { togglepopup(true) })
 
-    popupCloser.addEventListener('click', () => { togglepopup(false) })
+    popupCloser.addEventListener('pointerdown', () => { togglepopup(false) })
 
-    overlay.addEventListener('click', (e) => {
+    overlay.addEventListener('pointerdown', (e) => {
         if(e.target === overlay) { togglepopup(false) }
     })
 
@@ -64,7 +64,7 @@ function getTabs() {
 
     const tabs = document.querySelector('.tabs_block')
 
-    tabs.addEventListener('click', (e) => {
+    tabs.addEventListener('pointerdown', (e) => {
         const clickedElement = e.target.closest('.tab-button')
         console.log(clickedElement);
         
