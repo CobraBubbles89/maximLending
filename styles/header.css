@@ -60,7 +60,7 @@
 }
 
 .burger-button__line {
-    width: 100%;
+    width: 1.5rem;
     height: 2px;
     background-color: black;
     border-radius: 1rem;
