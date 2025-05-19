@@ -51,6 +51,14 @@ main {
     flex-grow: 1;
 }
 
+section {
+    opacity: 0;
+}
+
+section {
+    animation: fadeIn 1s forwards;
+}
+
 *:focus {
     outline-color: var(--greyColorStrong);
 }
