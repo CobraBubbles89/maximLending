@@ -69,6 +69,9 @@
     .textMainBlock {
         font-size: 1.375rem;
     }
+    .tab_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .button-60 {
         font-size: 0.875rem;
     }
