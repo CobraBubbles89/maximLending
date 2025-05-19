@@ -40,8 +40,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
     overflow-x: hidden;
     font-size: 1rem;
 }
@@ -51,6 +49,14 @@ main {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+}
+
+section {
+    opacity: 0;
+}
+
+section {
+    animation: fadeIn 1s forwards;
 }
 
 *:focus {

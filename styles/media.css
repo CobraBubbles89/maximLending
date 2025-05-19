@@ -18,18 +18,27 @@
     .header__burger-button {
         display: inline-flex;
         z-index: 1;
+        transform-origin: center;
     }
 
-    .header__burger-button.is-active .burger-button__line:first-child {
+    /* .header__burger-button.is-active .burger-button__line:first-child {
                 translate: -0.1rem 0.5rem;
                 rotate: 45deg;
     }
     .header__burger-button.is-active .burger-button__line:nth-child(2) {
         translate: -0.1rem -0.1rem;
         rotate: -45deg;
+    } */
+    .header__burger-button.is-active .burger-button__line.top {
+        transform: rotate(45deg);
+        top: 1.185rem;
     }
-    .header__burger-button.is-active .burger-button__line:last-child {
-        width: 0;
+    .header__burger-button.is-active .burger-button__line.middle {
+        opacity: 0;
+    }
+    .header__burger-button.is-active .burger-button__line.bottom {
+        transform: rotate(-45deg);
+        top: 1.185rem;
     }
 
     .header_nav-list {

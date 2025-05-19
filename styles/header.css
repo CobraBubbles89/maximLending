@@ -49,9 +49,12 @@
 }
 
 .header__burger-button {
+    position: relative;
     display: none;  
-    width: 2.1875rem;
-    height: 1.5625rem;
+    /* width: 2.1875rem; */
+    width: 2.5rem;
+    /* height: 1.5625rem; */
+    height: 2.5rem;
     flex-direction: column;
     justify-content: space-between;
     background-color: transparent;
@@ -60,11 +63,28 @@
 }
 
 .burger-button__line {
-    width: 1.5rem;
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    /* width: 1.5rem; */
     height: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     background-color: black;
     border-radius: 1rem;
 }
+
+.burger-button__line.top {
+    top: 0.75rem;
+}
+
+.burger-button__line.middle {
+    top: 1.1875rem;
+}
+
+.burger-button__line.bottom {
+    top: 1.625rem;
+}
+
 
 .header_overlay {
     display: contents;
