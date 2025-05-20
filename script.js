@@ -81,15 +81,24 @@ function getTabs() {
     
 }
 
+// function startFeedbackPage() {
+//     const currentURL = window.navigation.currentEntry.url
+//     if(currentURL.includes('feedback')) {
+//         getTabs()
+//     }
+//     return
+// }
+
+// startFeedbackPage()
+
 function startFeedbackPage() {
-    const currentURL = window.navigation.currentEntry.url
-    if(currentURL.includes('feedback')) {
-        getTabs()
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('feedback')) {
+        getTabs();
     }
-    return
 }
 
-startFeedbackPage()
+startFeedbackPage();
 
 
 
